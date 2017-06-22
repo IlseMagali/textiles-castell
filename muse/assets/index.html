@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Textiles Castell</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+<!---JAVA SCRIPT DE NAVEGACION--->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script>
+<!----- JQUERY para el menú de navegación --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY que activa el scroll hacia cada sección --->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+
+
+<!---JAVA SCRIPT DE ROTATOR--->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ice.js"></script>
+<link href="css/estilo_banner.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function theRotator() {
+	//Set the opacity of all images to 0
+	$('div#rotator ul li').css({opacity: 0.0});
+	
+	//Get the first image and display it (gets set to full opacity)
+	$('div#rotator ul li:first').css({opacity: 1.0});
+		
+	//Call the rotator function to run the slideshow, 6000 = change to next image after 6 seconds
+	setInterval('rotate()',3000);
+	
+}
+
+function rotate() {	
+	//Get the first image
+	var current = ($('div#rotator ul li.show')?  $('div#rotator ul li.show') : $('div#rotator ul li:first'));
+
+	//Get next image, when it reaches the end, rotate it back to the first image
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));	
+	
+	//Set the fade in effect for the next image, the show class has higher z-index
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+
+	//Hide the current image
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+	
+};
+
+$(document).ready(function() {		
+	//Load the slideshow
+	theRotator();
+});
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+<!---JAVA SCRIPT DE ROTATOR/--->
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <div id="contenedor general">
+    <!----- INICIA HEADER ---> 
+<header id="header">
+<div id="logo"><a href=""> TEXTILES CASTELL </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#inicio" class= "active" title="Next Section">Inicio</a></li>
+		<li><a href="#nosotros" title="Next Section">Nosotros</a></li>
+		<li><a href="#diseno" title="Next Section">Diseño</a></li>
+		<li><a href="#colecciones" title="Next Section">Colecciones</a></li>
+		<li><a href="#contacto" title="Next Section">Contacto</a></li>
+	</ul>
+</nav>
+</header> <!----- TERMINA HEADER ---> 
+	  <div id="inicio"> <!----- INICIAN SECCIONES --->
+	    <div id="fileteuno"></div>
+        <div id="iniciouno">
+          <div id="rotator">
+          	<ul>
+				<li class="show"><img src="images/bannerinicio.jpg" width="786" height="480" alt=""/></li>
+				<li><img src="images/banner2.jpg" width="786" height="480" alt=""/></li>
+				<li><img src="images/banner3.jpg" width="786" height="480" alt=""/></li>
+				<li><img src="images/banner4.jpg" width="786" height="480" alt=""/></li>
+				<li><img src="images/banner5.jpg" width="786" height="480" alt=""/></li>
+				<li><img src="images/banner6.jpg" width="786" height="480" alt=""/></li>
+			</ul>
+          </div>
+        </div>
+        <div id="iniciodos">
+            <div id="facebook"><a href="https://www.facebook.com/TextilesCastell/" target="new"><img id="face" src="images/face.png" alt="" width="32" height="26" onMouseOver="MM_showHideLayers('facebook','','show')" /></a></div>
+            <div id="youtube"><a href="https://www.youtube.com/results?search_query=textiles+castell" target="new"><img id="you" src="images/youtube.png" width="32" height="26" alt="" onMouseOver="MM_showHideLayers('youtube','','show')"/></a></div>
+            <div id="twitter"><a href="https://twitter.com/search?q=textilescastell" target="new"><img  id="twi" src="images/twitter.png" alt="" width="32" height="26" border="0" onMouseOver="MM_showHideLayers('twi','','show')"/></a>
+            </div>
+          <div id="direccion"><a href="https://www.google.es/maps/place/Textiles+Castell,+S.A.+De+C.V./@19.3717859,-99.2041517,15z/data=!4m5!3m4!1s0x0:0xbe781547e2702177!8m2!3d19.3717859!4d-99.2041517?hl=es" class="nounderline" target="new">Av. Alta Tensión #98 local 2, Del. Álvaro Obregón, CDMX 01569</a></div>    
+        </div>
+      </div>
+      <div id="nosotros">
+      	<div id="filetedos"></div>
+        <div id="somos">
+          <div id="somostexto">Somos una empresa 100% mexicana con más de 39 años en el
+mercado de la fabricación y comercialización de telas para la decoración en general</div>
+        </div>
+        <div id="nosdos">
+          <div id="estrategia">
+          	<div class="titulo">Estrategia</div>
+            <div class="descrip">Estar a la vanguardia en diseño y tecnología nos permite ofrecerle productos que se adapten y satisfagan sus necesidades.</div>
+          </div>
+          <div id="produccion">
+          	<div class="titulo">Producción</div>
+            <div class="descrip">Con maquinaria para el tejido jaquard, plano y estampación textil por transferencia, elaboramos textiles con fibras naturales y sintéticas.</div>
+          </div>
+          <div id="servicio">
+          	<div class="titulo">Servicio</div>
+            <div class="descrip">Nuestros departamentos de diseño, producción, comercial y administrativo buscan ofrecerle servicios de alta calidad y eficiencia.</div>
+          </div>
+          <div id="nostres">
+            <div id="textotelas">Los anchos que manejamos son:
+1.40 y 2.80 m en tejido jaquard y plano
+1.50 m en estampación por transferencia</div>
+			<div id="imagentelas"></div>
+          </div>
+          </div>
+        </div>
+      <div id="diseno">
+      	<div id="filetetres"></div>
+        <div id="disenouno">
+          <div id="verdiseno"><iframe width="792px" height="616px" src="diseno.html" scrolling="no" frameborder="0"></iframe></div>
+        </div>
+      </div>
+      <div id="colecciones">
+      	<div id="filetecuatro"></div>
+        <div id="coleccuno"> <!----- INICIO COLECCIONES TABLA ---> 
+        		<div id="coleccdos">
+                <table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height="500" width="750"><iframe src="ultimacoleccion.html" width="750px" height="500px" frameborder="0" scrolling="no"></iframe></td>
+      <td height="500" width="250">
+      
+      <table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr >
+      <td height="200"></td>
+    </tr>
+    <tr >
+      <td height="250"><table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height="20"></td>
+    </tr>
+    <tr>
+      <td height="30"><img src="images/quincecerodos.png" width="195" height="27" alt=""/></td>
+    </tr>
+    <tr>
+      <td height="200" valign="bottom">Nuestra más reciente colección esta inspirada en formas de la naturaleza, por ello muestra una amplia variedad de telas con diseños geométricos, figurativos, abstractos y coloridos, confeccionados con materiales de gran calidad, versátiles y atractivas para cualquier proyecto de decoración, tapicería y confección.</td>
+    </tr>
+     <tr>
+      <td height="50" valign="bottom" align="right">Otras colecciones</td>
+    </tr>
+    
+  </tbody>
+</table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+                </div>   
+        </div>
+      </div> 
+      <div id="contacto">
+      	<div id="filetecinco"></div>
+        <div id="contactuno"> <!----- INICIA FORMULARIO ---> 
+        	<div id="contactdos"> 
+            	<div id="saludoform">Cualquier duda o comentario, escríbanos:</div>
+                <div id="contenformulario">
+                <form name="Pedidos y comentarios" method="post" action="mailto:textilescastell@gmail.com" enctype="text/plain">
+           		  <input id="nombrecompleto" type="text" placeholder="Nombre*" Name="Nombre" required>
+                  <input type="text" placeholder="Correo electrónico*" name="Correo" required>
+                  <input type="text" placeholder="Asunto">
+                  <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                  <input id="submit" type="submit" formenctype="text/plain" formmethod="GET" name="Enviar" value="Enviar" >
+                </form>
+                </div>
+            </div>  <!----- FIN FORMULARIO ---> 
+            <div id="contacttres">
+            	<div id="mapa"><iframe name="unmapa" width="502px" height="268px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.939182488041!2d-99.2063403855172!3d19.371785886918897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20030601f7c35%3A0xbe781547e2702177!2sTextiles+Castell%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1469663476769" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <div id="telefonos">
+                    	  <p id="ciudad">CDMX y Área Metropolitana </p>
+                    	  <p>5593 6543 / 5593 5981 / 5660 8830 </p>
+                    	  <p id="afuera">Interior de la República</p>
+                    	  <p>01(55) 5593 6543 / 01(55) 5593 5981 / 01(55) 5660 8830</p>
+                </div>
+                <div id="redesdos"> 
+                <div id="twitterdos"><a href="https://twitter.com/search?q=textilescastell" target="new"><img  id="twidos" src="images/twitter.png" alt="" width="32" height="26" border="0" onMouseOver="MM_showHideLayers('twidos','','show')"/></a>
+            </div>
+             <div id="youtubedos"><a href="https://www.youtube.com/results?search_query=textiles+castell" target="new"><img id="youdos" src="images/youtube.png" width="32" height="26" alt="" onMouseOver="MM_showHideLayers('youtubedos','','show')"/></a></div>
+                	<div id="facebookdos"><a href="https://www.facebook.com/TextilesCastell/" target="new"><img id="facedos" src="images/face.png" alt="" width="32" height="26" onMouseOver="MM_showHideLayers('facebookdos','','show')" /></a></div>
+           
+                </div>
+            </div>
+        </div>
+     
+      </div>  
+</div>
+<footer>  
+	<div id="pie">
+          <div id="piedos"> <table width="520" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr >
+      <td height="50" valign="middle" align="center">Copyright © 2016 Textiles Castell. Todos los derechos reservados. Creado por Ilse Keymolen</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div> 
+</footer>
+</body>
+</html>

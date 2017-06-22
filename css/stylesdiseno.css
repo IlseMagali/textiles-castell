@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+#contenedoruno {
+	width:792px;
+	height:616px;
+	background-color:#EBEEF0;
+	background-image:url(../images/fondodiseno.png);
+	
+}
+
+#uno {
+	width:792px;
+	height:154px;
+}
+
+#dos {
+	width:792px;
+	height:154px;
+	
+}
+
+#tres {
+	width:528px;
+	height:288px;
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+}
+
+#botonuno {
+	width:132px;
+	height:154px;
+	float:left;
+	
+	/* transition properties */
+	background-image:url(../images/botonuno.png);
+	transition-property: background-image;
+  	transition-duration: 0.3s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+	
+}
+
+#botonuno:hover {
+	background-image:url(../images/botonunohover.png);
+	
+}
+
+#botondos {
+	width:132px;
+	height:154px;
+	float:left;
+	margin-left:198px;
+	margin-right:66px;
+	
+	/* transition properties */
+	background-image:url(../images/botondos.png);
+	transition-property: background-image;
+  	transition-duration: 0.3s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+	
+}
+
+#botondos:hover {
+	background-image:url(../images/botondoshover.png);
+}
+
+#botontres {
+	width:132px;
+	height:154px;
+	float:left;
+	margin-right:198px;
+	margin-left:66px;
+	
+	/* transition properties */
+	background-image:url(../images/botontres.png);
+	transition-property: background-image;
+  	transition-duration: 0.3s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+}
+
+#botontres:hover {
+	background-image:url(../images/botontreshover.png);
+}
+
+#botoncuatro {
+	width:132px;
+	height:154px;
+	float:right;
+	
+	
+	/* transition properties */
+	background-image:url(../images/botoncuatro.png);
+	transition-property: background-image;
+  	transition-duration: 0.3s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+	
+}
+
+#botoncuatro:hover {
+	background-image:url(../images/botoncuatrohover.png);
+	
+}
+
+
+
+
+/* rotator css*/
+ul li {
+	float: left;
+	position: absolute;
+	list-style:none;
+	left: 10px;
+	top: 10px;
+	width: 508px;
+	visibility:hidden;
+}
+
+#disenopasos ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#investigacion {
+	width: 508px;
+	height: 154px;
+	visibility:hidden;
+	z-index:4;
+	position:absolute;
+}
+
+#conceptua {
+	width:508px;
+	height:154px;
+	visibility:hidden;
+	z-index:3;
+	position:absolute;
+	
+
+}
+
+#adapta {
+	width:508px;
+	height:154px;
+	visibility:hidden;
+	z-index:2;
+	position:absolute;
+
+	
+}
+
+#sintesis {
+	width:508px;
+	height:154px;
+	visibility:hidden;
+	position:absolute;
+	z-index:1;
+	
+}
+
+/*CLASES PARA TEXTO E IMAGEN*/
+
+.texto {
+	width:314px;
+	height:154px;
+	float:right;
+	text-align:left;
+	font-size:14px;
+	font-family: 'Raleway', sans-serif;
+	line-height:150%;
+	margin-top:40px;
+}
+
+
+#investig {
+	width:134px;
+	height:154px;
+	float:left;
+	margin-right:20px;
+	background-image:url(../images/investig.png);
+}
+
+#concep {
+	width:134px;
+	height:154px;
+	float:left;
+	margin-right:20px;
+	background-image:url(../images/concep.png);
+}
+
+#adap {
+	width:124px;
+	height:154px;
+	float:left;
+	margin-right:30px;
+	background-image:url(../images/adap.png);
+}
+
+#sint {
+	width:124px;
+	height:154px;
+	float:left;
+	margin-right:30px;
+	background-image:url(../images/sint.png);
+}

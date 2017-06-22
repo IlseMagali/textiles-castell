@@ -1,0 +1,654 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Bitter:700);
+
+#contenedor general {
+	width:100%;
+	height:3814px;
+	background-color:#EBEEF0;
+}
+
+
+/* ESTILOS HEADER Y NAVEGACIÓN */
+
+#header { 
+	width: 100%; 
+	background-color:#3E3C3F; 
+	height: 64px; 	
+	position: fixed;
+	margin-top:32px;
+	z-index:501;
+}
+
+#logo a {
+	color: #fff;
+	text-decoration: none;
+	float: left;
+	font-size: 30px;
+	margin-top: 10px;
+	color: #fff;
+	font-family: 'Bitter', serif;
+	margin-left:40px;
+}
+
+#nav {
+	width: 600px;
+	float: right;
+	margin-top: 13px;
+	font-family: 'Raleway', sans-serif;
+	}
+
+#nav ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	list-style: none;
+	
+}
+
+#nav li {
+	margin-top: 9px;	
+	float: left;
+	padding-left: 30px;
+	
+}
+
+#nav li a { 
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	opacity:0.6;
+}
+
+#nav li a.active {
+	color: #fff;
+	opacity:1; border-bottom: 2px solid #fff;
+	
+	}
+	
+#nav li a:hover {
+	color: #fff;
+	opacity:1;  
+	
+}
+
+/* TERMINA ESTILOS HEADER Y NAVEGACIÓN */
+
+
+/* ESTILO CONTENEDORES DE CADA SECCIÓN */
+
+#inicio {
+	width:100%;
+	height:736px;
+	background-color:#EBEEF0;
+	padding-bottom:32px;
+	
+}
+
+#nosotros {
+	width:100%;
+	height:768px;
+	background-image:url(../images/fondonosotros.jpg);
+	
+}
+
+#diseno {
+	width:100%;
+	height:768px;
+	background-color:#7E7B7F;
+	
+}
+
+#colecciones {
+	background-color:#EBEEF0;
+	width:100%;
+	height:768px;
+}
+
+#contacto {
+	width:100%;
+	height:678px; /*le resté 100px, en realidad tiene que ser 768*/
+	background-color:#EBEEF0;
+	
+}
+
+/* TERMINA ESTILO CONTENEDORES DE CADA SECCIÓN */
+
+/* ESTILO CONTENEDORES DE INICIO */
+
+#fileteuno {
+	width:100%;
+	height:128px;
+	background-image:url(../images/filete.jpg);
+}
+
+#iniciouno {
+	width:100%;
+	height:512px;
+	background-color:#EBEEF0;
+	padding-top:32px;
+	
+}
+
+/* rotator in-page placement*/
+    div#rotator {
+	position:relative;
+	
+
+}
+
+/* rotator css*/
+div#rotator ul li {
+	float: left;
+	position: absolute;
+	list-style: none;
+	left: 255px;
+	top: 2px;
+	width: 430px;	
+}
+/* rotator image style */	
+	div#rotator ul li img {
+	background: #FFF;
+}
+    div#rotator ul li.show {
+	z-index:500;
+}
+
+#rotator ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*  fin rotator css*/	
+
+
+#iniciodos {
+	width: 55%;
+	height: 96px;
+	background-color: #EBEEF0;
+	padding-left: 300px;
+	
+}
+
+#redesocial {
+	width: 100%;
+	height: 26px;
+	margin-top: 10px;
+	text-align: left;
+	vertical-align:middle;
+}
+
+#facebook {
+	width: 32px;
+	height: 26px;
+	float: left;
+	background-image:url(../images/face.png);
+	margin-right: 20px;
+}
+
+img[id="face"] {
+	opacity:0.1;
+}
+
+#facebook:hover {
+	background-image:url(../images/facehover.png);
+}
+
+
+/* LINK DIRECCION*/
+#direccion {
+	float: right;
+	
+}
+
+/*link[id="coleccion"] {   
+	text-decoration:none;
+	color: #3E3C3F;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}*/
+
+a.nounderline {
+	text-decoration:none;
+	color: #7E7B7F;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+a:active {
+	text-decoration:none;
+	color: #B1BCC2;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+
+a:hover {
+	text-decoration:none;
+	color: #99CCCC;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+/* LINK DIRECCION*/
+
+#youtube {
+	width: 32px;
+	height: 26px;
+	background-image:url(../images/youtube.png);
+	float: left;
+	margin-right: 20px;
+}
+
+img[id="you"] {
+	opacity:0.1;
+}
+
+#youtube:hover {
+	background-image:url(../images/youtubehover.png);
+}
+
+#twitter {
+	width: 32px;
+	height: 26px;
+	background-image:url(../images/twitter.png);
+	float: left;
+	margin-right:70px;
+}
+
+img[id="twi"] {
+	opacity:0.1;
+}
+
+#twitter:hover {
+	background-image:url(../images/twitterhover.png);
+}
+
+/* ESTILO CONTENEDORES DE NOSOTROS */
+
+#filetedos {
+	width:100%;
+	height:128px;
+	background-image:url(../images/filete.jpg);
+}
+
+#somos {
+	width:100%;
+	height:113px;
+	background-color:#3E3C3F;
+	padding-top:15px;
+	
+}
+
+#somostexto {
+	width: 90%;
+	height: 65px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #3E3C3F;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color: #EBEEF0;
+	margin-top: 15px;
+}
+
+
+#nosdos {
+	width:798px;
+	height:435px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+}
+
+#nostres {
+	width:777px;
+	height:118px;
+	background-color:#3E3C3F;
+	float:right;
+	margin-top:25px;
+}
+
+#nosfondo {
+	width:100%;
+	height:118px;
+	background-image:url(../images/fondonosotros.jpg);
+}
+
+
+
+#imagentelas {
+	width:100px;
+	height:100px;
+	float:left;
+	margin-left:200px;
+	background-image:url(../images/imagentelas.png);
+}
+
+#textotelas {
+	width:300px;
+	height:80px;
+	float:right;
+	margin-right:150px;
+	font-family: 'Raleway', sans-serif;
+	color: #EBEEF0;
+	font-size:16px;
+	padding-top:20px;
+	line-height:150%;
+}
+
+/* CONTENEDORES PARA ESTRATEGIA, PRODUCCION Y SERVICIO*/
+
+.titulo {
+	width:146px;
+	height:20px;
+	font-family: 'Bitter', serif;
+	font-size:20px;
+	margin-left:25px;
+	margin-top:90px;
+	margin-bottom:15px;
+	color:#595254;
+}
+
+.descrip {
+	width:196px;
+	height:109px;
+	font-family: 'Raleway', sans-serif;
+	font-size:14px;
+	line-height:150%;
+	margin-left:auto;
+	margin-right:auto;
+	color:#3E3C3F;
+}
+
+/*.contenedores {
+	width:246px;
+	height:249px;
+	background-image:url(../images/estrategia.png);
+	float:left;
+	margin-left:20px;
+}*/
+
+#estrategia {
+	width:246px;
+	height:249px;
+	background-image:url(../images/estrategia.png);
+	float:left;
+	margin-left:20px;
+}
+
+#produccion {
+	width:246px;
+	height:249px;
+	background-image:url(../images/produccion.png);
+	float:left;
+	margin-left:20px;
+}
+
+#servicio {
+	width:246px;
+	height:249px;
+	background-image:url(../images/servicio.png);
+	float:left;
+	margin-left:20px;
+}
+	
+/* ESTILO CONTENEDORES DE DISEÑO */
+
+#filetetres {
+	width:100%;
+	height:128px;
+	background-image:url(../images/filete.jpg);
+}
+
+#disenouno {
+	width:100%;
+	height:640px;
+	background-color:#EBEEF0;
+	
+}
+
+#verdiseno {
+	width:792px;
+	height:616px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* ESTILO CONTENEDORES DE COLECCIONES */
+
+#filetecuatro {
+	width:100%;
+	height:128px;
+	background-image:url(../images/filete.jpg);
+}
+
+#coleccuno {
+	width:100%;
+	height:640px;
+}
+
+#coleccdos {
+	
+	width:1000px;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#EBEEF0;
+	font-family: 'Raleway', sans-serif;
+	line-height:150%;
+	color:#3E3C3F;
+	font-size:14px;
+	margin-top:40px;
+	
+}
+
+/* ESTILO CONTENEDORES DE CONTACTO */
+
+#filetecinco {
+	width:100%;
+	height:128px;
+	background-image:url(../images/filete.jpg);
+}
+
+#contactuno {
+	width:1024px;
+	height:500px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:#EBEEF0;
+	
+	
+}
+/* este contiene a FORMULARIO*/
+#contactdos {
+	width:502px;
+	height:425px;
+	float:left;
+	background-color:#EBEEF0;
+	
+}
+
+
+/* EMPIEZA FORMULARIO*/
+
+#saludoform {
+	width:442px;
+	height:35px;
+	margin-left:50px;
+	padding-top:10px;
+	font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:150%;
+	color:#3E3C3F;
+}
+
+#contenformulario {
+	
+	width:492px;
+	height:390px;
+	border-color:#3E3C3F;
+	padding-left:10px;
+}
+
+form {
+	display:block;
+	width:422px;
+	height:385px;
+	border:thin;
+	border-color:#3E3C3F;
+	float:left;
+}
+
+input {
+	
+	height: 20px;
+	width:382px;
+	font-size:16px;
+	font-family: 'Raleway', sans-serif;
+	color:#3E3C3F;
+	background:none;
+	padding:5px 10px;
+	margin-top:20px;
+	margin-left:40px;
+}
+
+#mensaje {
+	
+	width:382px;
+	height:150px;
+	font-size:16px;
+	font-family: 'Raleway', sans-serif;
+	padding:5px 10px;
+	margin-top:30px;
+	color:#3E3C3F;
+	background:none;
+	margin-left:40px;
+}
+
+#submit {
+	width:30%;
+	height:50px;
+	margin: 20px 165px ;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	color:#AFBDC4;
+	background-color:#595356;
+	transition: background, color, .5s ease 0;
+}
+
+#submit:hover {
+	color:#595356;
+	background-color:#AFBDC4;
+}
+
+#contacttres {
+	width:502px;
+	height:428px;
+	float:right;
+	background-color:#EBEEF0;
+	
+}
+
+#mapa {
+	width:502px;
+	height:268px;
+	margin-top:25px;
+}
+
+#telefonos {
+	width:502px;
+	height:160px;
+	color:#3E3C3F;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* REDES SOCIALES CONTACTO*/
+
+#redesdos{
+	height:26px;
+}
+
+#facebookdos {
+	width: 32px;
+	height: 26px;
+	float: right;
+	background-image:url(../images/face.png);
+}
+
+img[id="facedos"] {
+	opacity:0.1;
+}
+
+#facebookdos:hover {
+	background-image:url(../images/facehover.png);
+}
+
+#youtubedos {
+	width: 32px;
+	height: 26px;
+	background-image:url(../images/youtube.png);
+	float: right;
+	margin-left: 20px;
+}
+
+img[id="youdos"] {
+	opacity:0.1;
+}
+
+#youtubedos:hover {
+	background-image:url(../images/youtubehover.png);
+}
+
+#twitterdos {
+	width: 32px;
+	height: 26px;
+	background-image:url(../images/twitter.png);
+	float: right;
+	margin-left:20px;
+}
+
+img[id="twidos"] {
+	opacity:0.1;
+}
+
+#twitterdos:hover {
+	background-image:url(../images/twitterhover.png);
+}
+
+#pie {
+	width:100%;
+	height:50px;
+	font-family: 'Raleway', sans-serif;
+	color: #7E7B7F;
+	text-align: center;
+	font-size:12px;
+	background-color:#292727;
+}
+
+
+p[id="ciudad"] {
+	color:#7E7B7F;
+	font-family: 'Raleway', sans-serif;
+}
+
+p[id="afuera"] {
+	color:#7E7B7F;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#piedos {
+	width:520px;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#footer {
+	width:100%;
+	height:50px;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Textiles Castell-Diseño</title>
+<link href="css/stylesdiseno.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="contenedoruno">
+  
+  <div id="uno">
+    <div id="botondos" onMouseOver="MM_showHideLayers('conceptua','','show')" onMouseOut="MM_showHideLayers('conceptua','','hide')"></div>
+    <div id="botontres" onMouseOver="MM_showHideLayers('adapta','','show')" onMouseOut="MM_showHideLayers('adapta','','hide')"></div>
+  </div>
+  <div id="dos">
+    <div id="botonuno" onMouseOver="MM_showHideLayers('investigacion','','show')" onMouseOut="MM_showHideLayers('investigacion','','hide')"></div>
+    <div id="botoncuatro" onMouseOver="MM_showHideLayers('sintesis','','show')" onMouseOut="MM_showHideLayers('sintesis','','hide')"></div>
+  </div>
+  <div id="tres">
+  
+  			<ul>
+				<li id="disenopasos"></li>
+			  <li><div id="investigacion">
+				  <div id="investig"></div>
+                  <div class="texto">Comenzamos por investigar sobre un tema en especifico, elegir un país del mundo: Rusia; caracterizada por su eclecticismo, diversidad y multicolorido.</div>
+              </div></li>
+				<li><div id="conceptua">
+                <div id="concep"></div>
+                	<div class="texto">Determinamos de dónde se generan las formas, los patrones, el esquema de colores, para crear los elementos de diseño de las telas. El tema es Rusia, el concepto es folklore.</div>
+                	</div></li>
+				<li><div id="adapta">
+                	<div id="adap"></div>
+                	<div class="texto">Adaptamos la técnica y los hilos en función del diseño, teniendo claro la funcionalidad, el mercado, el uso y la construcción de la tela.</div>
+                	</div></li>
+				<li><div id="sintesis">
+                	<div id="sint"></div>
+                	<div class="texto">Después de haber tomado en cuenta todos los elementos anteriores, se colorean y tejen los diseños para su consecutiva comercialización.</div>
+                </div></li>
+			</ul>
+  
+  </div>
+</div>
+</body>
+</html>
